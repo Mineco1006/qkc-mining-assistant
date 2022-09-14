@@ -1,0 +1,17 @@
+[package]
+name = "qkc-web3-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde= "*"
+serde_json = "*"
+reqwest = { version = "*", features=["json"] }
+ethabi = "*"
+hex = { version = "*", features = ["serde"] }
+anyhow = "*"
+
+[dev-dependencies]
+tokio = { version = "*", features = ["full"] }

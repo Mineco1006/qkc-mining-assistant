@@ -1,0 +1,18 @@
+[package]
+name = "qkc-mining-assistant"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+qkc-web3-rs = { path = "../qkc-web3-rs" }
+tokio = { version = "*", features=["full"]}
+hex = "*"
+anyhow = "*"
+crossbeam-channel = "*"
+serde = "*"
+serde_json = "*"
+serde_ini = "*"
+log = "*"
+env_logger = "*"
